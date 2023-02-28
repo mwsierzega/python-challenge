@@ -20,9 +20,10 @@ all_total_votes = []
 
 #read csv file
 csvpath = os.path.join('Resources', 'election_data.csv') 
+
 with open(csvpath) as csvfile:
     csvreader = csv.reader(csvfile, delimiter=',')
-
+    
 #skip header
     csv_header = next(csvreader)
 
@@ -70,7 +71,8 @@ with open(csvpath) as csvfile:
             for i in range(len(all_total_votes)):
                 if all_total_votes[i] == winner_value:
                     winner = candidate_list[i]
-       
+
+
 #print analysis
 print("Election Results")
 print("-------------------------")
@@ -82,3 +84,24 @@ print(f"{candidate_list[2]}: {percent_Raymon}% ({total_Raymon})")
 print("-------------------------")
 print(f"Winner: {winner}")
 print("-------------------------")
+
+#write text file
+file_write = os.path.join('Analysis', 'election_analysis.txt')
+
+#create text file
+with open(file_write, 'w') as txt_file:
+    #info to show in the output file
+    election_results = (
+        f"\n\nElection Results\n"
+        f"-------------------------\n"
+        f"Total Votes: {total_ballots}\n"
+        "-------------------------\n"
+        f"{candidate_list[0]}: {percent_Charles}% ({total_Charles})\n"
+        f"{candidate_list[1]}: {percent_Diana}% ({total_Diana})\n"
+        f"{candidate_list[2]}: {percent_Raymon}% ({total_Raymon})\n"
+        f"-------------------------\n"
+        f"Winner: {winner}\n"
+        f"-------------------------\n"
+    )
+    #save the output file
+    txt_file.write(election_results)
