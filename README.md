@@ -3,7 +3,7 @@
 ### Part 1: PyBank
 ---
 
-! [Image Link](https://github.com/mwsierzega/python-challenge/blob/main/Images/revenue-per-lead.png)
+![Image Link](https://github.com/mwsierzega/python-challenge/blob/main/Images/revenue-per-lead.png)
 
 Objective: Create a Python script that analyzes the file "budget_data.csv" to calculate each of the below values.
 - The total number of months included in the dataset
@@ -14,13 +14,13 @@ Objective: Create a Python script that analyzes the file "budget_data.csv" to ca
 
 Your analysis should align with the following results:
 
-! [Image Link](https://github.com/mwsierzega/python-challenge/blob/main/Images/revenue_results.png)
+![Image Link](https://github.com/mwsierzega/python-challenge/blob/main/Images/revenue_results.png)
 
 ---
 ### Part 2: PyPoll
 ---
 
-! [Image Link](https://github.com/mwsierzega/python-challenge/blob/main/Images/Vote_counting.png)
+![Image Link](https://github.com/mwsierzega/python-challenge/blob/main/Images/Vote_counting.png)
 
 Objective: Create a Python script that analyzes the votes in "election_data.csv" and calculates each of the following values:
 - The total number of votes cast
@@ -31,4 +31,4 @@ Objective: Create a Python script that analyzes the votes in "election_data.csv"
 
 Your analysis should align with the following results:
 
-! [Image Link](https://github.com/mwsierzega/python-challenge/blob/main/Images/Vote_results.png)
+![Image Link](https://github.com/mwsierzega/python-challenge/blob/main/Images/Vote_results.png)
